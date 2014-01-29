@@ -1,1 +1,17 @@
-This file was created by IntelliJ IDEA 12.0.4 for binding GitHub repository
+This is Jed Levin's code intended for review by Second Spectrum as an example of work.
+
+This was completed in one afternoon.
+
+The code is a solution to the stated problem of predicting the outcome of a shot based on historical shot data, as provided by http://www.basketballgeek.com/data/.
+It implements a simple k-nearest neighbor approach, and achieves roughly 64% accuracy all-time.
+
+For details on the approach, please refer to the comments in the code itself.
+
+After implementing and viewing the results, I'm not convinced that k-nearest neighbor is the best approach to this problem, nor am I convinced that this code is flawless.  However, considering that this was one afternoon's work, an accuracy rate of 64% seems admirable, and certainly outperforms random.
+
+If I were to approach this problem from a different angle, I would consider a decision-tree based method, perhaps with k-nearest neighbor to help break ties.
+Decision-trees would be able to leverage several other pieces of data included in the dataset, beyond what is currently harnessed by the knn approach.  For example, who passed the ball?  Who else is on the court?  Are they home or away?  What just happened (i.e. did they just come out of a timeout)?
+
+I suspect some combination of approaches is best.  Boosting would probably come in helpful there.
+
+At any rate, I'll consider the code complete for now, and I'm open to critique.
